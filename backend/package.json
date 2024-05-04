@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "packageManager": "yarn@4.1.1",
+  "scripts": {
+    "start": "nodemon --exec \"go\" ./cmd",
+    "dev": "air",
+    "deps": "go mod download",
+    "bundle": "go build -o server ./cmd",
+    "lint-fix": "gofmt -w ./cmd"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.0"
+  }
+}

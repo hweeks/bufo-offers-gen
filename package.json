@@ -1,0 +1,9 @@
+{
+  "name": "bufo-offers-gen",
+  "packageManager": "yarn@3.6.1",
+  "private": true,
+  "workspaces": [
+    "frontend/",
+    "backend/"
+  ]
+}
