@@ -47,9 +47,8 @@ func GetAssetFolder() string {
 	// handle finding the files
 	finalPath := filepath.Join(home, "projects", "bufo-offers-gen", "backend", "assets")
 	pathToAssets := os.Getenv("MASK_ASSETS")
-	if pathToAssets == "" {
-		pathToAssets = finalPath
-
+	if pathToAssets != "" {
+		finalPath = pathToAssets
 	}
 	return finalPath
 }

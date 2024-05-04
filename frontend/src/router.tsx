@@ -4,7 +4,6 @@ import { GridBase } from "./pages/grid-base";
 import { Home } from "./pages/home";
 
 const RouterView = () => {
-  const searchParams = new URLSearchParams(window.location.search).toString();
   return (
     <Route path={"/"} element={<GridBase />}>
       <Route path={"/"} element={<Home />} />

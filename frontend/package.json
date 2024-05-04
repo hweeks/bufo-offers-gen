@@ -26,10 +26,13 @@
   },
   "scripts": {
     "lint": "quality lint",
-    "lint-fix": "quality lint-fix",
+    "lint-fix": "biome format --write ./src",
     "dev": "webpack serve",
     "build-bundle": "webpack --mode production",
     "build-types": "quality build-types",
     "test": "quality test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2"
   }
 }

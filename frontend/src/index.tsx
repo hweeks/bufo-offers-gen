@@ -21,12 +21,12 @@ const WrappedHome = () => {
   const realTitle = "bufo-offers";
   return (
     <React.StrictMode>
-        <ThemeProvider theme={theme as any}>
-          <Reset />
-          <QueryClientProvider client={queryClient}>
-            <RouterProvider router={router} />
-          </QueryClientProvider>
-        </ThemeProvider>
+      <ThemeProvider theme={theme as any}>
+        <Reset />
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
+      </ThemeProvider>
     </React.StrictMode>
   );
 };

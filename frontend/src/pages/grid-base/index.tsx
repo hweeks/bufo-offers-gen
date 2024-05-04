@@ -24,9 +24,18 @@ const HomeLayout = styled.div<{ rowCount?: number }>`
   grid-template-columns: [${GridRowsAndColumns.gutter}] 7vw [${GridRowsAndColumns.mainColumn}] 86vw [${GridRowsAndColumns.gutterRight}] 7vw;
 `;
 
+const LogoHolster = styled.div`
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 40px;
+`;
+
 export const GridBase = () => {
   return (
     <HomeLayout>
+      <LogoHolster>bufo offers generator</LogoHolster>
       <Outlet />
     </HomeLayout>
   );
