@@ -1,0 +1,6 @@
+{
+  "exec": "go install github.com/go-delve/delve/cmd/dlv@latest && cd cmd && dlv debug --listen=127.0.0.1:2345 --continue --accept-multiclient --headless --log-dest=3 --api-version 2 --allow-non-terminal-interactive=true",
+  "ext": "go",
+  "signal": "SIGINT",
+  "cwd": "./cmd"
+}

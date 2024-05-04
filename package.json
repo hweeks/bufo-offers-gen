@@ -1,0 +1,12 @@
+{
+  "name": "bufo-offers-gen",
+  "packageManager": "yarn@4.2.1",
+  "private": true,
+  "workspaces": [
+    "frontend/",
+    "backend/"
+  ],
+  "scripts": {
+    "build": "cd frontend && yarn build-bundle"
+  }
+}

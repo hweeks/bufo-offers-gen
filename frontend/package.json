@@ -1,0 +1,38 @@
+{
+  "name": "frontend",
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "@swc/core": "1.4.11",
+    "@swc/jest": "0.2.36",
+    "@types/react": "18.2.73",
+    "@types/react-dom": "18.2.23",
+    "html-webpack-plugin": "5.6.0",
+    "jest": "29.7.0",
+    "lodash": "4.17.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "7.47.0",
+    "react-is": "18.2.0",
+    "react-query": "3.39.3",
+    "react-router-dom": "6.15.0",
+    "styled-components": "6.0.7",
+    "styled-icons": "10.47.0",
+    "styled-reset": "4.5.1",
+    "swc-loader": "0.2.3",
+    "typescript": "5.4.3",
+    "webpack": "5.91.0",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "4.15.2"
+  },
+  "scripts": {
+    "lint": "quality lint",
+    "lint-fix": "biome format --write ./src",
+    "dev": "webpack serve",
+    "build-bundle": "webpack --mode production",
+    "build-types": "quality build-types",
+    "test": "quality test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2"
+  }
+}
